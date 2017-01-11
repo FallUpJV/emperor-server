@@ -1,0 +1,45 @@
+{
+  "name": "Post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "likes": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "dislikes": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "addressedTo": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
